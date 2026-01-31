@@ -1,0 +1,16 @@
+# Package Managers
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+bun.lock
+bun.lockb
+
+# Miscellaneous
+/static/
+.claude/
+
+# Dynamic CSS that Prettier can't parse
+src/lib/pterodactyl/core/themes/ThemeProvider.svelte
+
+# CLI templates (copied to user projects, not linted here)
+packages/ptero/templates/

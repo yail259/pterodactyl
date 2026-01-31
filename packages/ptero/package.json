@@ -1,0 +1,32 @@
+{
+	"name": "ptero",
+	"version": "0.1.0",
+	"type": "module",
+	"bin": {
+		"ptero": "dist/index.js"
+	},
+	"scripts": {
+		"dev": "tsx src/index.ts",
+		"build": "tsup src/index.ts --format esm --dts --sourcemap --clean --out-dir dist",
+		"lint": "eslint . --ext .ts",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@clack/prompts": "^0.8.2",
+		"colorette": "^2.0.20",
+		"commander": "^12.1.0",
+		"execa": "^9.5.2",
+		"fast-glob": "^3.3.3",
+		"fs-extra": "^11.2.0",
+		"fuse.js": "^7.1.0",
+		"gray-matter": "^4.0.3",
+		"ora": "^8.1.1",
+		"zod": "^3.24.1"
+	},
+	"devDependencies": {
+		"tsup": "^8.3.6",
+		"tsx": "^4.19.2",
+		"typescript": "^5.9.3",
+		"@types/node": "^22"
+	}
+}
